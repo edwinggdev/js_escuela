@@ -36,4 +36,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/ # Carpeta por defecto donde Astro genera el build
-          server-dir: /public_html/javascript # Ruta de destino en cPanel (cambia si usas un subdominio o carpeta distinta)
+          server-dir: /public_html/javascript/# Ruta de destino en cPanel (cambia si usas un subdominio o carpeta distinta)
