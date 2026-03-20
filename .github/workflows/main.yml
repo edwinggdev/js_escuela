@@ -36,7 +36,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/
-          server-dir: /public_html/javascript/
+          server-dir: /javascript/
           # --- Agrega estas líneas para mayor compatibilidad ---
           port: 21
           protocol: ftp
