@@ -35,6 +35,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./dist/ # Carpeta por defecto donde Astro genera el build
-          # Ruta de destino en cPanel (cambia si usas un subdominio o carpeta distinta)
-          server-dir: /public_html/javascript/  
+          local-dir: ./dist/
+          server-dir: /public_html/javascript/
+          # --- Agrega estas líneas para mayor compatibilidad ---
+          port: 21
+          protocol: ftp
+           # Evita borrar archivos si la conexión es inestable
+          dangerous-clean-slate: false
